@@ -9,15 +9,38 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+@font-face {
+    font-family: Open-suns;
+    src: url(OpenSans-Light.ttf);
+    
+}
+/*@font-face {
+    font-family: Open-suns;
+    src: url(OpenSans-Regular.ttf);
+    font-weight: bold;
+    
+}*/
 html {
     color: white;
     font-size: 62.5%;
+    font-family: Open-suns;
+    font-weight: normal;
     line-height: 1.4;
-    background:black;
+    font-weight: normal;
+   
 }
-
-/****************HEADER FOR MOBILE************************/
+h1,h2 ,h3
+{
+    padding:0;
+    margin:0;
+    font-weight: normal;
+}
+a
+{
+   color:white;
+   text-decoration:none;
+}
+/****************HEADER FOR MOBILE************************
 header
 {
     background:white;
@@ -26,10 +49,6 @@ header
    box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.7);
 }
 .menu,.login-language,.search-tab
-{
-    display:none;
-}
-.login-language
 {
     display:none;
 }
@@ -54,14 +73,289 @@ header>img
       height:3.5rem;
       width:3.5rem;
 }
-/****************PART1 FOR MOBILE************************/
+****************PART1 FOR MOBILE************************/
+
+
+
+
+
+
+
+/*------------------FULL version----------------------*/
+
+/*******header CSS*******/
+header
+{
+   background:white;
+   height:10.5rem;
+   width:100%;
+   box-shadow: 0 5px 0px 0px rgba(90, 90, 90, 0.3);
+}
+.header-content
+{
+  
+    margin:0 auto;
+    width: 97rem;
+
+}
+.main-logo
+{
+    display:inline-block;
+    margin-top:1.5rem;
+    vertical-align:top;
+}
+.right-header
+{
+    display:inline-block;
+}
+nav a 
+{
+    text-decoration:none;
+    font-size:12px;
+    color:#a0a0a0;
+    margin:0px;
+ 
+}
+.menu
+{
+    display:inline-block;
+    width:60rem;
+    padding:0px;
+    padding-top:5rem;
+}
+.menu ul li
+{
+    width:12rem;
+    display:inline-block;
+    margin-left:0/8rem;
+    margin-bottom:15rem;
+   
+}
+.menu ul li:first-child
+{
+  
+}
+nav a:hover 
+{
+    color:blue;
+}
+.menu ul li .sub-menu
+{
+    display:none;
+}
+.menu ul li:hover .sub-menu  
+{
+    display:block;
+
+}
+#search-but-mobile,#menu-but-mobile
+{
+    display:none;
+}
+/******first section********/
+strong
+{
+        font-weight: bold;
+}
 .part1
 {
-    background:url(../img/slide-bg-complexity.jpg);
+    margin-top: 0px;
+    background-image: url(../img/slide-bg-complexity.jpg);
+    background-repeat:no-repeat;
+    background-position-x: 43%;
+    background-attachment: fixed;
+    background-size: auto 100%;
     width:100%;
-    height: 20 rem;
     border:0;
+    height:56rem;
+    box-shadow: inset 0px 4px 10px -5px hsla(0, 0%, 26%, 0.5);
 }
+.title
+{
+    margin:0 auto;
+    width:940px;
+}
+.title h1
+{
+    font-size:45px;
+    padding-top:3rem;
+}
+.title h2
+{
+    font-size:20px;
+   
+}
+.blue-button
+{
+    display:block;
+    background-color:#39C;
+    border-radius: 7px;
+    width: 20rem;
+    height: 3.4rem;
+    font-weight: lighter;
+    color: #FFF;
+    margin-top:2rem;
+}
+.blue-button:hover
+{
+    background-color:#33aae5;
+}
+.blue-button h3
+{
+    float:left;
+    margin:0px;
+    width:16rem;
+    font-size:1.5rem;
+    padding-top:0.6rem;
+    padding-left:1rem;
+}
+.arrow
+{
+    float:right;
+    margin-top:1.1rem;
+    margin-right:0.8rem;
+    background-image:url(../img/btnArrow.png);
+    background-repeat:no-repeat;
+    width:1rem;
+    height:1.5rem;
+    display:inline-block;
+    
+}
+.small-squers
+{
+    border-radius: 0.2rem;
+    margin-top:2rem;
+    margin-right:0.35rem;
+    margin-left:0.3rem;
+    display:inline-block;
+    height:1rem;
+    width:1rem;
+    background-color:#a0a0a0;
+}
+.small-squers:hover
+{
+     background-color:#39C
+}
+.squares-p1
+{
+    border-radius:1rem;
+    height:20rem;
+    width:28rem;
+    margin-top:3rem;
+    margin-right:2rem;   
+    background:#6AC33C;
+    opacity:0.9;
+    display:inline-block;
+}
+.squares-p1:hover
+{
+    opacity:1;
+}
+.sq-part a:first-child section
+{
+    background:#F63D97;
+}
+.sq-part a:last-child section
+{
+    background:#F46F16;
+}
+.st-part-content
+{
+    opacity:1;
+    padding-left:1rem;
+    font-size:2.3rem;
+}
+.st-part-links
+{
+    display:inline-block;
+    font-size:1.5rem;
+    margin-left:1rem;
+    padding-top:0.8rem;
+    font-weight:bold;
+}
+.st-part-links:hover
+{
+    text-decoration:underline;
+}
+ .logo-1st-part
+{
+    float:left;
+    margin-top:2rem;
+    margin-left:1rem;
+    width:3rem;
+    height:2.1rem;
+    background-image:url(../img/link-icon-image.png);
+    background-repeat:no-repeat;
+}
+ /*.logo-1st-part:after
+ {
+     background-image:url(../img/eventListIconNews.png);
+ }*/
+
+ /*************second part**************/
+ .part2
+ {
+    background-color:#48add4;
+    margin-top: 0px;
+    background-size: auto 100%;
+    width:100%;
+    border:0;
+    height:40rem;
+    box-shadow: inset 0px 4px 10px -5px hsla(0, 0%, 26%, 0.5);
+ }
+.part2-content
+ {
+    margin:0 auto;
+    width:940px;
+ }
+.part2 h1
+{
+    font-size:4.5rem;
+    text-align: center;
+    padding-top:2rem;
+}
+.squares-p2
+{
+    height:7rem;
+    width:14rem;
+    margin-top:3rem;
+    margin-right:1rem;   
+    display:inline-block;
+}
+.nd-part-links
+{
+    height:4rem;
+    text-align:center;
+    vertical-align:bottom;
+}
+.logo-2nd-part
+{
+    vertical-align:top;
+    background-image:url(../img/solution_icon_smart-money.png);
+    height:7rem;
+    width:20rem;
+    background-repeat:no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
