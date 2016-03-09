@@ -29,7 +29,7 @@ html {
     font-weight: normal;
    
 }
-h1,h2 ,h3
+h1,h2 ,h3,h4
 {
     padding:0;
     margin:0;
@@ -39,6 +39,11 @@ a
 {
    color:white;
    text-decoration:none;
+}
+.part1-content,.part2-content,.part3-content,.part4-content
+{
+    margin:0 auto;
+    width:940px;
 }
 /****************HEADER FOR MOBILE************************
 header
@@ -170,17 +175,12 @@ strong
     height:56rem;
     box-shadow: inset 0px 4px 10px -5px hsla(0, 0%, 26%, 0.5);
 }
-.title
-{
-    margin:0 auto;
-    width:940px;
-}
-.title h1
+.part1-content h1
 {
     font-size:45px;
     padding-top:3rem;
 }
-.title h2
+.part1-content h2
 {
     font-size:20px;
    
@@ -195,6 +195,7 @@ strong
     font-weight: lighter;
     color: #FFF;
     margin-top:2rem;
+    box-shadow:0.5px 5px 5px hsla(0, 0%, 26%, 0.5);
 }
 .blue-button:hover
 {
@@ -208,6 +209,8 @@ strong
     font-size:1.5rem;
     padding-top:0.6rem;
     padding-left:1rem;
+
+
 }
 .arrow
 {
@@ -230,11 +233,11 @@ strong
     display:inline-block;
     height:1rem;
     width:1rem;
-    background-color:#a0a0a0;
+    background-color:#c4c6c8;
 }
 .small-squers:hover
 {
-     background-color:#39C
+     background-color:#39C;
 }
 .squares-p1
 {
@@ -246,10 +249,16 @@ strong
     background:#6AC33C;
     opacity:0.9;
     display:inline-block;
+    box-shadow:0.5px 1px 5px hsla(0, 0%, 26%, 0.5);
+
 }
 .squares-p1:hover
 {
     opacity:1;
+}
+.squares-p1:hover .st-part-links
+{
+    text-decoration:underline;
 }
 .sq-part a:first-child section
 {
@@ -272,10 +281,6 @@ strong
     margin-left:1rem;
     padding-top:0.8rem;
     font-weight:bold;
-}
-.st-part-links:hover
-{
-    text-decoration:underline;
 }
  .logo-1st-part
 {
@@ -303,11 +308,6 @@ strong
     height:40rem;
     box-shadow: inset 0px 4px 10px -5px hsla(0, 0%, 26%, 0.5);
  }
-.part2-content
- {
-    margin:0 auto;
-    width:940px;
- }
 .part2 h1
 {
     font-size:4.5rem;
@@ -318,45 +318,400 @@ strong
 {
     height:7rem;
     width:14rem;
-    margin-top:3rem;
-    margin-right:1rem;   
+    padding-top:3rem;
+    padding-right:1rem;   
     display:inline-block;
+    vertical-align:top;
 }
 .nd-part-links
 {
     height:4rem;
     text-align:center;
+    margin:0 auto;
     vertical-align:bottom;
 }
 .logo-2nd-part
 {
-    vertical-align:top;
-    background-image:url(../img/solution_icon_smart-money.png);
+    margin:0 auto;
+    vertical-align:middle;
+    background-image:url(../img/solution_icon_biz-analitics.png);
     height:7rem;
     width:20rem;
     background-repeat:no-repeat;
 }
+.squares-p2:hover .logo-2nd-part
+{
+     background-image:url(../img/solution_icon_biz-analitics_hover.png);
+}
+.part2-content a:nth-child(3) .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_diti-cx.png);
+}
+.part2-content a:nth-child(3):hover .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_diti-cx_hover.png);
+}
+.part2-content a:nth-child(4) .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_smart-money.png);
+}
+.part2-content a:nth-child(4):hover .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_smart-money_hover.png);
+}
+.part2-content a:nth-child(5) .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_optimize-efficnt.png);
+}
+.part2-content a:nth-child(5):hover .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_optimize-efficnt_hover.png);
+}
+.part2-content a:nth-child(6) .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_personal.png);
+}
+.part2-content a:nth-child(6):hover .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_personal_hover.png);
+}
+.part2-content a:nth-child(7) .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_biz-transform.png);
+}
+.part2-content a:nth-child(7):hover .logo-2nd-part
+{
+    background-image:url(../img/solution_icon_biz-transform_hover.png);
+}
+.part2 .blue-button
+{
+    margin:0 auto;
+    margin-top:10rem;
+}
 
+/***********PART3**********/
+.part3 {
+    margin-top: 0px;
+    background-image: url(../img/news-and-events-bg.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    width: 100%;
+    border: 0;
+    height: 35rem;
+    box-shadow: inset 0px 4px 10px -5px hsla(0, 0%, 26%, 0.5);
+}
+.part3 h1
+{
+    font-size:4.5rem;
+    text-align: center;
+    padding-top:2rem;
+}
+.event
+{
+    margin-top:3rem;
+    margin-right:2rem;
+    display:inline-block;
+    height:4rem;
+    width:28rem;
+}
+.title-part3
+{
+    font-size:3rem;
+}
+.squares-p3
+{
+    height:9rem;
+    width:28rem;
+    border-radius:0.2rem;
+    background-color:rgba(255,255,255,0.4);
+}
+.squares-p3:hover
+{
+    background-color:white;
+}
+.sub-square
+{
+    float:left;
+    border-radius:0.3rem;
+    box-shadow:1px 5px 5px #888888;
+    margin-left:1rem;
+    margin-top:0.5rem;
+    width:5rem;
+    height:7.5rem;
+    background-color:#3399cc;
+    vertical-align:bottom;
+}
+.day
+{
+    font-size:3.5rem;
+    font-weight:bold;
+    text-align:center;
+    border-bottom: 2px dotted white;
+}
+.mounth
+{
+    padding-top:0.3rem;
+    font-size:1.5rem;
+    text-align:center;
+    font-weight:bold;
+}
+.sq-p3-text
+{
+  
+    display:inline-block;
+    font-size:1.3rem;
+    color:black;
+    padding-left:1rem;
+    font-weight:bolder;
+   
+}
+.logo-3rd-part
+{
+    background-image:url(../img/eventListIconEvents.png);
+    background-repeat:no-repeat;
+    height:2.1rem;
+    width:2.5rem;
+    margin-top:1rem;
+    float:left;
+}
+.part3-content section:last-child .link_logo .logo-3rd-part
+{
+     background-image:url(../img/eventListIconPress.png);
+}
+.part3-content section:nth-child(2) .link_logo .logo-3rd-part
+{
+    background-image:url(../img/eventListIconNews.png);
+}
+.rd-part-links
+{
+    margin-top:1rem;
+    margin-left:1rem;
+    font-size:1.2rem;
+    display:inline-block;
 
+}
+.link_logo:hover  .rd-part-links
+{
+    color:rgb(20, 20, 20);
+    text-decoration: underline;
+    
+}
+.link_logo:hover .logo-3rd-part
+{
+    background-image:url(../img/eventListIconEvents_hover.png);
+}
+.part3-content section:last-child .link_logo:hover .logo-3rd-part
+{
+    background-image:url(../img/eventListIconPress_hover.png);
+}
+.part3-content section:nth-child(2) .link_logo:hover .logo-3rd-part
+{
+    background-image:url(../img/eventListIconNews_hover.png);
+}
+/***********PART4**********/
+.part4
+{
+    background-color:#ececec;
+    margin-top: 0px;
+    background-size: auto 100%;
+    width:100%;
+    border:0;
+    height:55rem;
+    box-shadow: inset 0px 5px 10px -5px hsla(0, 0%, 26%, 0.6);
+}
+.part4 h1
+{
+    padding-top:2.8rem;
+    font-size:5rem;
+    color:#2b2b2b;
+    text-align:center;
+}
+.squares-p4-per
+{
+    margin-top:2rem;
+    margin-left:0.5rem;
+    height:30rem;
+    width:34rem;
+    display:inline-block;
+    vertical-align:top;
+}
+.sq-quote
+{
+    background-color:white;
+    height:18rem;
+    width:34rem;
+}
+.person
+{
+    vertical-align:top;
+    margin-top:1rem;
+    margin-left:1rem;
+}
+.quote-img
+{
+    background-image:url(../img/quote-grey.png);
+    background-repeat:no-repeat;
+    height:2em;
+    width:3rem;
+    display:inline-block;
+    vertical-align:top;
+}
+.qoute
+{
+    display:inline-flex;
+    font-size:1.7rem;
+    color:#808080;
+    font-weight:bold;
+}
+.switch-to-q
+{
+    display:none;
+}
+.line
+{
+    background-color:#ececec;
+    height:0.1rem;
+    width:32rem;
+    margin: 0 auto;
+}
+.name
+{
+    float:left;
+    color:#91a8cc;
+    font-size:1.4rem;
+    font-weight:bold;
+    margin-left:1.2rem;
+    margin-top:0.4rem;
 
+}
+.name span
+{
+    float:left;
+    color:#808080;
+    font-size:1.4rem;
+    margin-top:0.4rem;
 
+}
+.logo-4th-part 
+{
+    background-image: url(../img/cable_wireless_w100px_X_h42px2.jpg);
+    display: inline-block;
+    height: 4rem;
+    width: 10rem;
+    float: right;
+    vertical-align: top;
+}
+.img-logo
+{
+    display:inline-block;
+    background-image: url(../img/Tata_Sky_w108px_X_h95px.jpg);
+    vertical-align:middle;
+    height:9rem;
+    width:10.8rem;
+    margin-top:1.3rem;
+    vertical-align:central;    
+}
+.squares-p4-per a:nth-child(2) .img-logo
+{
+    background-image: url(../img/mts_w108px_X_h95px.jpg);
+    float:left;
+    margin-right:0.8rem;
+}
+.squares-p4-per a:nth-child(4) .img-logo
+{
+        background-image: url(../img/upc_w108px_X_h95px.jpg);
+        float:right;
+}
+.img-logo2
+{
+    display:inline-block;
+    background-image: url(../img/Kyivstarw_w108px_X_h95.jpg);
+    vertical-align:middle;
+    height:9rem;
+    width:10.8rem;
+    margin-bottom:1.3rem;
+    vertical-align:central;    
+}
+.squares-p4-per a:nth-child(2) .img-logo2
+{
+    background-image: url(../img/MAX_telecom_w108px_X_h95.jpg);
+    float:left;
+    margin-right:0.8rem;
+}
+.squares-p4-per a:nth-child(3) .img-logo2
+{
+        background-image: url(../img/VIDEOCON_w108px_X_h95px.jpg);
+        float:right;
+}
+.gm-box .logo-4th-part
+{
+    background-image:url(../img/Jersey_Telecom_w100px_X_h42px.jpg);
+}
+.switch-logo
+{
+    display:none;
+}
+.squares-p4-third
+{
+    display:inline-block;
+    margin-top:2rem;
+    margin-left:0.5rem;
+    height:29rem;
+    width:22rem;
+    display:inline-block;
+    vertical-align:top;
+}
+.squares-p4-third .sq-quote
+{
 
+    width:22rem;
+}
+.squares-p4-third .qoute
+{
+    width:17rem;
+    display:inline-block;
 
+}
+.squares-p4-third .line
+{
+    width:18rem;
+}
+.squares-p4-third .logo-4th-part
+{
+    background-image:url(../img/multilinks.jpg);
+    width:8rem;
+}
+.img-1 ,.img-2
+{
+    display:inline-block;
+    vertical-align:middle;
+    height:9rem;
+    width:10.8rem;
+    margin-top:1.3rem;
+    vertical-align:central;
+}
+.img-1:hover,.img-2:hover,.img-logo:hover,.img-logo2:hover
+{
+    background-image:url(../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg);
+}
+.img-1
+{
+    float:left;
+    background-image:url(../img/3mob_w108px_X_h95px.jpg);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.img-2
+{
+    float:right;
+    background-image:url(../img/play_w108px_X_h95px.jpg);
+}
+.part4 .blue-button
+{
+    margin:0 auto;
+    margin-top:3rem;
+}
 
 
 /*
