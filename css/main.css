@@ -151,7 +151,7 @@ header
 }
 .sub-menu-half li a
 {
-    font-size:1.3rem;
+    font-size:1.3rem; 
 }
 .menu-divider
 {
@@ -228,7 +228,7 @@ header
 #search
 {
     border:0;
-    width:70%;
+    width:15em;
     color:black;
 }
 #sub
@@ -240,9 +240,13 @@ header
     background-repeat:no-repeat;
     background-color:transparent;
 }
-#search-but-mobile,#menu-but-mobile
+#search-but-mobile,#menu-but-mobile,.search-tab-mob
 {
     display:none;
+}
+#sub-menu-checkbox1,#sub-menu-checkbox2,#sub-menu-checkbox3,#sub-menu-checkbox4,#search-checkbox,#menu-checkbox,.mobile-menu
+{
+        display:none;
 }
 /******first section********/
 strong
@@ -1158,6 +1162,10 @@ footer
     {
         width:10rem;
     }
+    #search
+    {
+        width:7rem;
+    }
 }
 /*------------MOBILE VERSION----------*/
 /*------------------------------------*/
@@ -1173,17 +1181,23 @@ footer
         width: 100%;
     }
    /****HEADER***/
-     .menu,.right-header
+     .menu,.right-header,.sub-logo
     {
         display:none;
     }
-    .sub-logo
+    .logo-for-mobile
     {
-        height:4rem;
-        width:12rem;
-        margin: 0 auto;
+        background-image:url(../img/comverse-logo.png);
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        height:4.5rem;
+        width:13rem;
         margin-top:1rem;
-        display:block;
+        display:inline-block;
+    }
+    label:hover
+    {
+        cursor:pointer;
     }
     #search-but-mobile
     {
@@ -1197,6 +1211,8 @@ footer
          display:block;
          height:5rem;
          width:5rem;
+         margin-right:2rem;
+         margin-top:2rem;         
     }
     #menu-but-mobile
     {
@@ -1210,8 +1226,109 @@ footer
           display:block;
           height:5rem;
           width:5rem;
+          margin-left:2rem;
+          margin-right:32%;
+          margin-top:2rem;         
     }
+    #search-checkbox:checked ~.search-tab-mob
+    {
+        position:absolute;
+        margin-top:3rem;
+        display:block;
+        height:6rem;
+        width:100%;
+        background-color:white;
+    }
+    .search-tab
+    {
+        
+        margin-left:5%; 
+        width:90%;
+        height:3.5rem;
+    }
+    #search
+    {
+        font-size:2rem;
+        width:91%;
+    }
+    .search-tab .login-divider
+    {
+      width:2%;
+    }
+    #sub
+    {
+        width:5%;
+        margin-top:1rem;
+        padding:0;
+    }
+   #menu-checkbox:checked ~ .mobile-menu
+    {
+        display:block;
+    }
+    .sub-menu-mob
+   {
+       display:none;
+   }
+    .mobile-menu
+    {
+        position:absolute;
+        margin-top:2rem;
+        width:100%;
+        background-color:white;
+    }
+    .sub-menu-mob
+    {
+        padding:0;
+        margin:0;
+    }  
+    .nav-title-mob , .sub-menu-mob a
+    {
+
+        display:block;
+        height:5rem;
+        width:100%;
+        font-size:1.8rem;
+        color:black;
+        background-color:white;
+        border-bottom:1px solid #c8c8c8;;
+        
+    }
+     .sub-menu-mob a
+     {
+         padding-left:3rem;
+             text-transform: uppercase;
+
+     }
+    .mob-arrow
+    {
+        margin-left:1rem;
+        margin-right:1rem;
+        margin-top:2rem;
+        display:inline-block;
+        background-image:url(../img/navCollapseArrowRight.png);
+        background-repeat:no-repeat;
+        height:1.5rem;
+        width:1rem;
+    }
+    #sub-menu-checkbox1:checked +.nav-title-mob .mob-arrow,
+    #sub-menu-checkbox2:checked +.nav-title-mob .mob-arrow,
+    #sub-menu-checkbox3:checked +.nav-title-mob .mob-arrow,
+    #sub-menu-checkbox4:checked +.nav-title-mob .mob-arrow
+    {  
+        -webkit-transform:rotate(90deg);    
+    } 
+    #sub-menu-checkbox1:checked ~ .sub-menu-mob.first, 
+    #sub-menu-checkbox2:checked ~ .sub-menu-mob.second, 
+    #sub-menu-checkbox3:checked ~ .sub-menu-mob.third, 
+    #sub-menu-checkbox4:checked ~ .sub-menu-mob.fourth 
+    {
+        display:block;
+    }
+
+  
 /****PART1**/
+
+
     .part1
     {
         height:auto;
