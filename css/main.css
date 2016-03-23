@@ -218,13 +218,13 @@ header
     border: 0.1px solid #c1bfbf;
     border-radius:0.5rem;
 }
-#search
+.search
 {
     border:0;
     width:15em;
     color:black;
 }
-#sub
+.sub
 {
     width:1rem;
     margin-top:0.5rem;
@@ -1052,7 +1052,7 @@ footer
     vertical-align:bottom;
 
 }
-.sub
+.sub-form
 {
     position:relative;
     height:4rem;
@@ -1246,7 +1246,7 @@ footer
         width:90%;
         height:3.5rem;
     }
-    #search
+    .search
     {
         font-size:2rem;
         width:91%;
@@ -1255,7 +1255,7 @@ footer
     {
       width:2%;
     }
-    #sub
+    .sub
     {
         width:5%;
         margin-top:1rem;
